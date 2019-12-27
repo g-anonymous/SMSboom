@@ -419,7 +419,7 @@ def start(target, counter, delay, ch, cc):
                     print(
                         '\nWe Are Working Too Hard To Increase The International Limit...')
                     input(
-                        '\n หากต้องการติดต่อแอดมิน FB:ต้า'า จุ้บ'บ ...\n\nPress Enter To Exit...')
+                        '\n หากต้องการติดต่อแอดมิน FB:ยลยุทธ์ วันชาติ ...\n\nPress Enter To Exit...')
                     os.system('rm *.xxx* > /dev/null 2>&1')
                     print('\n\n')
                     banner()
@@ -522,7 +522,7 @@ while True:
         print('\n\nInvalid Country Code..\n\t\tCountry Codes Are Generally 1-3 digits...\n')
         continue
     if len(pn) <= 6:
-        print('\n\nไม่พบเบอร์..\n')
+        print('\n\n ไม่พบเบอร์..\n')
         continue
     for cch in str(cc + pn):
         if not cch.isdigit():
