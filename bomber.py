@@ -510,13 +510,13 @@ except Exception:
     pass
 while True:
     pn = ""
-    cc = input("\tEnter Your Country Code (Without +) : ")
+    cc = input("\t ใส่รหัสประเทศ (ตัวอย่าง +66) : ")
     if '+' in cc:
         tc = list(cc)
         tc.remove('+')
         cc = ''.join(tc)
         cc = cc.strip()
-    pn = input("\tEnter Target Number: +" + cc + " ")
+    pn = input("\t ใส่เบอร์ (ตัวอย่าง 997072075): +" + cc + " ")
     pn = remsp(pn)
     if len(cc) >= 4 or len(cc) < 1:
         print('\n\nInvalid Country Code..\n\t\tCountry Codes Are Generally 1-3 digits...\n')
@@ -536,19 +536,19 @@ try:
 except Exception:
     type = 0
 if type == 1:
-    nm = int(input("Enter Number of Calls To Send(Maximum 15): "))
+    nm = int(input("ใส่ค่าที่ต้องการ (สูงสุด 15): "))
     if nm > 15:
-        print("\t\tYou Have Entered " + str(nm) +
+        print("\t\t คุณเลือกแล้ว" + str(nm) +
               ".\n\tNormalizing Value To 15")
         nm = 15
-    dl = float(input("Enter Delay time (in seconds) [Recommended 10 sec ] : "))
+    dl = float(input("เวลาการส่ง (สูงสุด 10วิ ) [Recommended 10 sec ] : "))
 elif type == 0:
     if cc == "91":
-        nm = int(input("Enter Number of Messages To Send(0 For Unlimited): "))
+        nm = int(input("กำหนดข้อความการส่ง (0 For Unlimited): "))
         dl = float(
             input("Enter Delay time (in seconds) [Recommended 2 sec ] : "))
     else:
-        nm = int(input("Enter Number of Messages To Send: "))
+        nm = int(input("ใส่เลขที่ต้องการ: "))
         dl = float(
             input("Enter Delay time (in seconds) [Recommended 10 sec ] : "))
 maxlim = 0
