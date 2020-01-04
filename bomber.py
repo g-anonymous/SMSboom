@@ -541,14 +541,14 @@ if type == 1:
         print("\t\t คุณเลือกแล้ว" + str(nm) +
               ".\n\tNormalizing Value To 15")
         nm = 15
-    dl = float(input("เวลาการส่ง (สูงสุด 10วิ ) [Recommended 10 sec ] : "))
+    dl = float(input("เวลาการส่ง (แนะนำ 10วิ ) [Recommended 10 sec ] : "))
 elif type == 0:
     if cc == "91":
         nm = int(input("กำหนดข้อความการส่ง (0 For Unlimited): "))
         dl = float(
             input("Enter Delay time (in seconds) [Recommended 2 sec ] : "))
     else:
-        nm = int(input("ใส่เลขที่ต้องการ: "))
+        nm = int(input("ข้อความที่ต้องการส่ง"))
         dl = float(
             input("Enter Delay time (in seconds) [Recommended 10 sec ] : "))
 maxlim = 0
